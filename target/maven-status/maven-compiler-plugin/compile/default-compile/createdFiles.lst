@@ -1,0 +1,9 @@
+Pages\BlazeDemo\Purchase.class
+HelloSelenium.class
+Pages\BlazeDemo\Index.class
+Pages\BlazeDemo\Reserve.class
+Pages\MI_DT\Roles.class
+Pages\MI_DT\Login.class
+Helpers\BrowserConfig.class
+Pages\BlazeDemo\Confirmation.class
+Helpers\Helpers.class

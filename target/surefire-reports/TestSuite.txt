@@ -1,0 +1,53 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 693.12 s <<< FAILURE! - in TestSuite
+Tests.MI_DT_tests.Mi_DT_Test_Roles_Dirigente_Sindical  Time elapsed: 41.668 s  <<< FAILURE!
+java.lang.AssertionError:  expected [Indica que OrganizaciÃ³n Sindical vas a seleccionar] but found [La pÃ¡gina no se encontro]
+	at Tests.MI_DT_tests.Mi_DT_Test_Roles_Dirigente_Sindical(MI_DT_tests.java:53)
+
+Tests.MI_DT_tests.Mi_DT_Test_Roles_Empleador  Time elapsed: 222.494 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //div[@class='title accordion-title' and text()='Empleador Persona JurÃ­dica'] (tried for 30 second(s) with 500 milliseconds interval)
+	at Tests.MI_DT_tests.Mi_DT_Test_Roles_Empleador(MI_DT_tests.java:39)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='title accordion-title' and text()='Empleador Persona JurÃ­dica']"}
+  (Session info: headless chrome=96.0.4664.45)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-PSAJ7GT', ip: '192.168.86.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\temp\scoped_dir41284_157...}, goog:chromeOptions: {debuggerAddress: localhost:52455}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2ece82bd35c73ea9437769d23628d3c2
+*** Element info: {Using=xpath, value=//div[@class='title accordion-title' and text()='Empleador Persona JurÃ­dica']}
+	at Tests.MI_DT_tests.Mi_DT_Test_Roles_Empleador(MI_DT_tests.java:39)
+
+Tests.MI_DT_tests.Mi_DT_Test_Roles_Manual_De_Usuario  Time elapsed: 197.988 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //div[@id='roles-right-panel']/div[@class='fadeIn']/div[contains(@class, 'ui')]/button[contains(@class, 'small')] (tried for 30 second(s) with 500 milliseconds interval)
+	at Tests.MI_DT_tests.Mi_DT_Test_Roles_Manual_De_Usuario(MI_DT_tests.java:64)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='roles-right-panel']/div[@class='fadeIn']/div[contains(@class, 'ui')]/button[contains(@class, 'small')]"}
+  (Session info: headless chrome=96.0.4664.45)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-PSAJ7GT', ip: '192.168.86.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\temp\scoped_dir28016_118...}, goog:chromeOptions: {debuggerAddress: localhost:64532}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c912c9e674721c7fe579d7d3e81a8268
+*** Element info: {Using=xpath, value=//div[@id='roles-right-panel']/div[@class='fadeIn']/div[contains(@class, 'ui')]/button[contains(@class, 'small')]}
+	at Tests.MI_DT_tests.Mi_DT_Test_Roles_Manual_De_Usuario(MI_DT_tests.java:64)
+
+Tests.MI_DT_tests.Mi_DT_Test_Roles_Trabajador  Time elapsed: 197.69 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: btn-trabajador (tried for 30 second(s) with 500 milliseconds interval)
+	at Tests.MI_DT_tests.Mi_DT_Test_Roles_Trabajador(MI_DT_tests.java:28)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#btn\-trabajador"}
+  (Session info: headless chrome=96.0.4664.45)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-PSAJ7GT', ip: '192.168.86.53', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\temp\scoped_dir47176_193...}, goog:chromeOptions: {debuggerAddress: localhost:60873}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b311c01f66d7d5f25c1a14bae4cc60fe
+*** Element info: {Using=id, value=btn-trabajador}
+	at Tests.MI_DT_tests.Mi_DT_Test_Roles_Trabajador(MI_DT_tests.java:28)
+

@@ -1,0 +1,38 @@
+//XPATH PARA ENCONTRAR POR TEXTO EN HERMANO
+//form[@name='AL969']/following-sibling::td[text()='9696']
+
+////input[@value='Choose This Flight'])[2]
+
+
+//RECORRER UNA LISTA DE DOS FORMAS DISTINTAS
+
+
+      helpers.Print("CICLO FOR CON OBJECTOS");
+      for(WebElement vuelo : flights){
+
+          helpers.Print(vuelo.getAttribute("value"));
+
+      }
+        helpers.Print("CICLO FOR CON INDICES");
+      for(int x=0;x<flights.size();x++){
+
+          helpers.Print("Index: "+ x + "  "+ flights.get(x).getAttribute("value"));
+      }
+
+
+
+
+AxisName        	Result
+ancestor        	Selects all ancestors (parent, grandparent, etc.) of the current node
+ancestor-or-self	Selects all ancestors (parent, grandparent, etc.) of the current node and the current node itself
+attribute	        Selects all attributes of the current node
+child	            Selects all children of the current node
+descendant	        Selects all descendants (children, grandchildren, etc.) of the current node
+descendant-or-self	Selects all descendants (children, grandchildren, etc.) of the current node and the current node itself
+following       	Selects everything in the document after the closing tag of the current node
+following-sibling	Selects all siblings after the current node
+namespace	        Selects all namespace nodes of the current node
+parent	            Selects the parent of the current node
+preceding       	Selects all nodes that appear before the current node in the document, except ancestors, attribute nodes and namespace nodes
+preceding-sibling	Selects all siblings before the current node
+self	            Selects the current node

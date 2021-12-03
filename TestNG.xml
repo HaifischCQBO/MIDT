@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Mi_DT">
+
+    <test name="regression" allow-return-values="true">
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="host" value="midt.dirtrab.cl"></parameter>
+        <parameter name="user" value="18580616-2"></parameter>
+        <parameter name="password" value="Barbatos123!"></parameter>
+        <parameter name="url" value="https://www.dt.gob.cl/portal/1626/w3-channel.html"></parameter>
+        <parameter name="headless" value="true"></parameter>
+        <packages>
+            <package name="Tests"></package>
+        </packages>
+    </test>
+</suite>
